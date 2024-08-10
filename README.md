@@ -6,7 +6,7 @@ IWPhone on Anywhere
 
 ## Supported
 Android 5.1 ~ 14 (IWPhone on Android)  
-Windows 10~11 (IWPhone On Windows)
+Windows 10~11 (IWPhone on Windows)
 >We will try our best to adapt to more versions in the future versions.
 
 ## Install
