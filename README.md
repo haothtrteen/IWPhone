@@ -11,7 +11,7 @@ Windows 10~11 (IWPhone on Windows)
 
 ## Install
 - IWPhone on Android ：https://www.coolapk.com/apk/com.byyoung.setting
-- IWPhone on Windows ：[爱玩机Windows版测试/反馈群](https://t.me/aiwanji)
+- IWPhone on Windows ：[Telegram channel](https://t.me/haothirteen)
 
 ## For Developers
 
