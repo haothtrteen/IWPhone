@@ -5,7 +5,8 @@
         "uid": "000001",
         "description": "IWPhone息屏深度dozm，官方demo",
         "price": "3kb",
-        "download": "http"
+        "download": "https://raw.githubusercontent.com/haothtrteen/IWPhone/main/IwphoneModules/src/IWPhone%E6%81%AF%E5%B1%8F%E6%B7%B1%E5%BA%A6doze.iwp"，
+        "developer": "iwphone"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "uid": "模块2唯一标识",
         "description": "模块2描述信息",
         "price": "模块2价格",
-        "download": "http"
+        "download": "http",
+         "developer": "iwphone"
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "uid": "模块3唯一标识",
         "description": "模块3描述信息",
         "price": "模块3价格",
-        "download": "http"
+        "download": "http",
+         "developer": "iwphone"
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "uid": "模块3唯一标识",
         "description": "模块3描述信息",
         "price": "模块3价格",
-        "download": "http"
+        "download": "http",
+         "developer": "iwphone"
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "uid": "模块3唯一标识",
         "description": "模块3描述信息",
         "price": "模块3价格",
-        "download": "http"
+        "download": "http",
+         "developer": "iwphone"
     },
     {
         "id": 6,
