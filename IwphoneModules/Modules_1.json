@@ -22,7 +22,7 @@
         "description": "模块3描述信息",
         "price": "模块3价格",
         "download": "http"
-    }
+    },
     {
         "id": 4,
         "name": "模块3名称",
@@ -30,7 +30,7 @@
         "description": "模块3描述信息",
         "price": "模块3价格",
         "download": "http"
-    }
+    },
     {
         "id": 5,
         "name": "模块3名称",
@@ -38,7 +38,7 @@
         "description": "模块3描述信息",
         "price": "模块3价格",
         "download": "http"
-    }
+    },
     {
         "id": 6,
         "name": "模块3名称",
