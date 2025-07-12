@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "IWPhone息屏深度doze.iwp",
+        "uid": "000001",
+        "description": "IWPhone息屏深度dozm，官方demo",
+        "price": "3kb",
+        "download": "http"
+    },
+    {
+        "id": 2,
+        "name": "模块2名称",
+        "uid": "模块2唯一标识",
+        "description": "模块2描述信息",
+        "price": "模块2价格",
+        "download": "http"
+    },
+    {
+        "id": 3,
+        "name": "模块3名称",
+        "uid": "模块3唯一标识",
+        "description": "模块3描述信息",
+        "price": "模块3价格",
+        "download": "http"
+    }
+    {
+        "id": 4,
+        "name": "模块3名称",
+        "uid": "模块3唯一标识",
+        "description": "模块3描述信息",
+        "price": "模块3价格",
+        "download": "http"
+    }
+    {
+        "id": 5,
+        "name": "模块3名称",
+        "uid": "模块3唯一标识",
+        "description": "模块3描述信息",
+        "price": "模块3价格",
+        "download": "http"
+    }
+    {
+        "id": 6,
+        "name": "模块3名称",
+        "uid": "模块3唯一标识",
+        "description": "模块3描述信息",
+        "price": "模块3价格",
+        "download": "http"
+    }
+]
