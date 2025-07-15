@@ -93,12 +93,12 @@ iwphone模块化任务执行框架是一个轻量级、高可靠的Shell脚本�
 │       └── test/
 ├── tmp_modules.list      # 临时触发文件列表（脚本运行时生成）
 ├── module_runner.pid     # 脚本自身PID记录（用于外部停止）
-└── main.sh      # 主脚本（用于启动以及保活和扩展功能）
-└── iwphone.sh  # 主脚本 (核心逻辑)
-└── sync.sh    #工具脚本
-└── sync_dir.sh  #工具脚本
-└── ModStart.sh  #iwphone模块安装脚本
-└── stop_runner.sh   #一键停止进程
+├── main.sh      # 主脚本（用于启动以及保活和扩展功能）
+├──  iwphone.sh  # 主脚本 (核心逻辑)
+├──  sync.sh    #工具脚本
+├──  sync_dir.sh  #工具脚本
+├── ModStart.sh  #iwphone模块安装脚本
+├──  stop_runner.sh   #一键停止进程
 └── uninstall.sh   #简易卸载
 
 快速上手
