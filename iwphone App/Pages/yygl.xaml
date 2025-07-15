@@ -1,0 +1,88 @@
+﻿<Window x:Class="iwphone.Pages.yygl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UIKitTutorials.Pages"
+        mc:Ignorable="d"
+        Title="应用管理" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen" WindowStyle="None"
+        Background="White" AllowsTransparency="True"
+        ResizeMode="NoResize" WindowState="Normal">
+    <Grid>
+ 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Text="应用管理" FontSize="22" Foreground="#596B75" Margin="10 0 0 0" VerticalAlignment="Center"/>
+        
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <!--<ColumnDefinition Width="2*"/>-->
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--<TextBlock Text="安装包路径" Margin="5"/>-->
+            <TextBlock Text="包名" Margin="5" Grid.Column="1"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="txtSearch" Margin="5" TextChanged="txtSearch_TextChanged"/>
+            <Button Content="搜索" Grid.Column="1" Margin="5" Click="btnSearch_Click"/>
+        </Grid>
+        <TextBox x:Name="txtNewData"  Grid.Row="3" Text="{Binding NewData}" Margin="5"/>
+        
+        <ListBox x:Name="lstApps" Grid.Row="4" SelectionChanged="lstApps_SelectionChanged">
+          
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <!--<TextBlock Text="{Binding PackageName}" Margin="5"/>-->
+                        <TextBlock Text="{Binding AppName}" Margin="5"/>
+                       
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!-- Start: Button Close | Restore | Minimize -->
+            <StackPanel Grid.Row="0" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,10,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft">
+                <Button x:Name="btnClose" Style="{StaticResource IconButtonsStyle}" Content="{DynamicResource close}" Click="btnClose_Click" Tag="IsCloseButton"/>
+                <Button x:Name="btnRestore" Margin="5,0" Click="btnRestore_Click">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}" BasedOn="{StaticResource IconButtonsStyle}">
+                            <Setter Property="Content" Value="{DynamicResource maximize}"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=home, Path=WindowState}" Value="Maximized">
+                                    <Setter Property="Content" Value="{DynamicResource restore}"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button x:Name="btnMinimize" Style="{DynamicResource IconButtonsStyle}" Content="{DynamicResource minimize}" Click="btnMinimize_Click"/>
+                <Button Content="重置背景" Grid.Column="1" Margin="5" Click="btnwall_Click"/>
+            </StackPanel>
+            <!-- End: Button Close | Restore | Minimize -->
+
+
+        </Grid>
+    </Grid>
+    
+</Window>

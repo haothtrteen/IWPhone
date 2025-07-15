@@ -1,0 +1,221 @@
+﻿<Page x:Class="iwphone.Pages.SoundsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UIKitTutorials.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SoundsPage">
+
+
+    <UniformGrid Columns="4" Grid.Row="1" Margin="20 10 40 0">
+
+        <Border Background="White" Grid.RowSpan="2"  Margin="20 0 0 0" CornerRadius="10">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" Color="DarkGray" Opacity="0.4" Direction="280" ShadowDepth="0" />
+            </Border.Effect>
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="内存" Foreground="#596B75" FontSize="13"/>
+                <Border Width="100" Height="100" BorderThickness="6" BorderBrush="#717171" CornerRadius="100" Grid.Row="1"/>
+
+                <UniformGrid Columns="2" Grid.Row="2">
+                    <Border BorderThickness="0 0 1 0" BorderBrush="DarkGray">
+                        <StackPanel HorizontalAlignment="Center">
+                            <TextBlock x:Name="factorync" FontSize="22"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Border Width="10" Height="10" Background="#59E6B5"/>
+                                <TextBlock Text="Zram" Margin="5 0 0 0"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock x:Name="factorync1" FontSize="22"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Border Width="10" Height="10" Background="#FF7900"/>
+                            <TextBlock Text="Swap" Margin="5 0 0 0"/>
+                        </StackPanel>
+                    </StackPanel>
+                </UniformGrid>
+            </Grid>
+        </Border>
+
+        <Border Background="White" Grid.Column="1" Grid.RowSpan="2" Margin="20 0 0 0"  CornerRadius="10">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" Color="DarkGray" Opacity="0.4" Direction="280" ShadowDepth="0" />
+            </Border.Effect>
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="0.5*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel>
+                    <TextBlock Text="CPU" Foreground="#596B75" FontSize="13"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="4543" FontSize="16" VerticalAlignment="Bottom"/>
+                        <TextBlock Text="" Foreground="#22AC03" FontSize="22" FontFamily="Fonts/#iconfont"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <Canvas Grid.Row="1">
+                    <Path Stroke="#717171" StrokeThickness="3">
+                        <Path.Data>
+                            <PathGeometry >
+                                <PathFigure IsClosed="False"  StartPoint="0,120">
+                                    <BezierSegment Point1="30,30" Point2="50,90" Point3="60,40" />
+                                    <BezierSegment Point1="70,10" Point2="90,30" Point3="100,40" />
+                                    <BezierSegment Point1="110,50" Point2="130,60" Point3="160,0" />
+                                </PathFigure>
+                            </PathGeometry>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+
+                <UniformGrid Columns="7" Grid.Row="2">
+                    <TextBlock Text="M" HorizontalAlignment="Center"/>
+                    <TextBlock Text="T" HorizontalAlignment="Center"/>
+                    <TextBlock Text="W" HorizontalAlignment="Center"/>
+                    <TextBlock Text="T" HorizontalAlignment="Center"/>
+                    <TextBlock Text="F" HorizontalAlignment="Center"/>
+                    <TextBlock Text="S" HorizontalAlignment="Center"/>
+                    <TextBlock Text="S" HorizontalAlignment="Center"/>
+                </UniformGrid>
+            </Grid>
+        </Border>
+
+        <Grid Margin="10 0 0 0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Margin="5 0 5 5" Background="White" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="20" Color="DarkGray" Opacity="0.4" Direction="280" ShadowDepth="0" />
+                </Border.Effect>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="设备" VerticalAlignment="Center" Foreground="#717171" Margin="10 0 0 0"/>
+                    <TextBlock x:Name="factorycs" Grid.Row="1" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="22"/>
+                    <Border CornerRadius="5" Width="30" Height="30" Background="#D5F8EC" Grid.Row="1" HorizontalAlignment="Right" 
+                                        VerticalAlignment="Top" Margin="0 0 5 0">
+                        <TextBlock Text="" FontSize="18" Foreground="#59E6B5" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Fonts/#iconfont"/>
+                    </Border>
+
+                    <StackPanel Grid.Row="2" VerticalAlignment="Center" Margin="10 0 0 0" Orientation="Horizontal">
+                        <TextBlock Text="" Foreground="#59E6B5" FontFamily="Fonts/#iconfont"/>
+                        <TextBlock x:Name="factorycs1" Foreground="#59E6B5" />
+                        <TextBlock Margin="5 0 0 0" x:Name="factoryxh"  Foreground="#A4ADB2" />
+                    </StackPanel>
+                </Grid>
+
+            </Border>
+
+            <Border Grid.Row="1" Margin="5 10 5 0" Background="White" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="20" Color="DarkGray" Opacity="0.4" Direction="280" ShadowDepth="0" />
+                </Border.Effect>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="设备模式" VerticalAlignment="Center" Foreground="#717171" Margin="10 0 0 0"/>
+                    <TextBlock x:Name="factoryms" Grid.Row="1" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="22"/>
+                    <Border CornerRadius="5" Width="30" Height="30" Background="#D5F8EC" Grid.Row="1" HorizontalAlignment="Right" 
+                                        VerticalAlignment="Top" Margin="0 0 5 0">
+                        <TextBlock Text="" FontSize="18" Foreground="#59E6B5" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Fonts/#iconfont"/>
+                    </Border>
+
+                    <StackPanel Grid.Row="2" VerticalAlignment="Center" Margin="10 0 0 0" Orientation="Horizontal">
+                        <TextBlock Text="" Foreground="Red" FontFamily="Fonts/#iconfont"/>
+                        <TextBlock Text="系统" Foreground="Red" />
+                        <TextBlock x:Name="factoryms1"  Foreground="#A4ADB2" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+        </Grid>
+
+        <Grid Margin="10 0 0 0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Margin="5 0 5 5" Background="White" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="20" Color="DarkGray" Opacity="0.4" Direction="280" ShadowDepth="0" />
+                </Border.Effect>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="系统" VerticalAlignment="Center" Foreground="#717171" Margin="10 0 0 0"/>
+                    <TextBlock x:Name="factorybb" Grid.Row="1" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="22"/>
+                    <Border CornerRadius="5" Width="30" Height="30" Background="#D5F8EC" Grid.Row="1" HorizontalAlignment="Right" 
+                                        VerticalAlignment="Top" Margin="0 0 5 0">
+                        <TextBlock Text="" FontSize="18" Foreground="#59E6B5" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Fonts/#iconfont"/>
+                    </Border>
+
+                    <StackPanel Grid.Row="2" VerticalAlignment="Center" Margin="10 0 0 0" Orientation="Horizontal">
+                        <TextBlock Text="&#xe78b;" Foreground="Red" FontFamily="Fonts/#iconfont"/>
+                        <TextBlock x:Name="factorybb1" Foreground="Red" />
+                        <TextBlock Margin="5 0 0 0" x:Name="factorybb2"  Foreground="#A4ADB2" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="1" Margin="5 10 5 0" Background="White" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="20" Color="DarkGray" Opacity="0.4" Direction="280" ShadowDepth="0" />
+                </Border.Effect>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="状态" VerticalAlignment="Center" Foreground="#717171" Margin="10 0 0 0"/>
+                    <TextBlock x:Name="factoryzt" Grid.Row="1" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="22"/>
+                    <Border CornerRadius="5" Width="30" Height="30" Background="#D5F8EC" Grid.Row="1" HorizontalAlignment="Right" 
+                                        VerticalAlignment="Top" Margin="0 0 5 0">
+                        <TextBlock Text="" FontSize="18" Foreground="#59E6B5" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Fonts/#iconfont"/>
+                    </Border>
+
+                    <StackPanel Grid.Row="2" VerticalAlignment="Center" Margin="10 0 0 0" Orientation="Horizontal">
+                        <TextBlock Text="" Foreground="#59E6B5" FontFamily="Fonts/#iconfont"/>
+                        <TextBlock Text="adb" Foreground="#59E6B5" />
+                        <TextBlock Margin="5 0 0 0" Text="access"  Foreground="#A4ADB2" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+
+    </UniformGrid>
+   
+</Page>
