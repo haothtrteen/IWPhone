@@ -120,7 +120,7 @@ Windows 10~11 (IWPhone on Windows)
 
 iwphone 爱玩机PC端是一款“为玩机而生”的安卓管理工具，通过可视化界面与模块化设计，降低了PC-安卓深度操作的门槛，同时保留了强大的扩展性。无论是普通用户日常使用，还是极客玩家探索系统潜力，它都是你的“全能玩机助手”！
 
-📥 下载地址："GitHub Releases" (https://github.com/haothtrteen/IWPhone/tree/main)
+📥 下载地址："GitHub Releases" ([IWPhone](https://github.com/haothtrteen/IWPhone))
 
 💬 交流群："QQ群/Telegram链接" (http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=1S5AtdA0Q6KVJlr3anr9MBE-_qg6ds6w&authKey=XoyYccfL5S4b2dKkP7PGxtKJXYIcrm%2Bj2F3ajHWo5AQ4CsvgmIQX82tXDshKz0P9&noverify=0&group_code=792885692)（待补充）
 
